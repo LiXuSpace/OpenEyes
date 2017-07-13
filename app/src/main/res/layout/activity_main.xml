@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qf.eye.MainActivity">
+    
+    <!-- 占位的帧布局 -->
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- tab选项部分 -->
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_text"
+            android:text="精选"/>
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_discover"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_text"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_writer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_wirter"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_text"
+            android:text="作者"/>
+
+        <RadioButton
+            android:id="@+id/rb_mime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_mime"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/selector_text"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>
